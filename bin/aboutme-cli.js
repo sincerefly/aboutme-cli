@@ -39,10 +39,6 @@ const profile = [
     { text: "https://blog.yasking.org/", style: "link" }
   ],
   [
-    { text: "About:  ", style: "label" },
-    { text: "https://blog.yasking.org/pages/about.html", style: "link" }
-  ],
-  [
     { text: "GitHub: ", style: "label" },
     { text: "https://github.com/sincerefly", style: "link" }
   ],

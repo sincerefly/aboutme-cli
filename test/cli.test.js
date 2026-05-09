@@ -18,5 +18,6 @@ test("CLI prints highlighted about information", async () => {
   assert.match(stdout, /\x1b\[1;38;2;199;67;80m/);
   assert.match(stdout, /东东's Blog/);
   assert.match(stdout, /https:\/\/blog\.yasking\.org\//);
+  assert.doesNotMatch(stdout, /pages\/about\.html/);
   assert.match(stdout, /Golang \/ CI\/CD \/ Kubernetes/);
 });

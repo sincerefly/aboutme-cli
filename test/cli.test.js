@@ -15,9 +15,9 @@ test("CLI prints highlighted about information", async () => {
   });
 
   assert.match(stdout, /\x1b\[[0-9;]+m/);
-  assert.match(stdout, /\x1b\[1;38;2;199;67;80m/);
+  assert.match(stdout, /\x1b\[1m\x1b\[38;2;181;137;0m/);
   assert.match(stdout, /东东's Blog/);
   assert.match(stdout, /https:\/\/blog\.yasking\.org\//);
   assert.doesNotMatch(stdout, /pages\/about\.html/);
-  assert.match(stdout, /Golang \/ CI\/CD \/ Kubernetes/);
+  assert.match(stdout, /Golang · CI\/CD · Kubernetes/);
 });

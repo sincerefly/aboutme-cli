@@ -5,20 +5,20 @@ const RESET = `${ESC}0m`;
 const rgb = (r, g, b) => `${ESC}38;2;${r};${g};${b}m`;
 
 const styles = {
-  title:   `${ESC}1m${rgb(181, 137,   0)}`,   // bold solarized yellow  (#B58900) — 3:1+ on both bg
-  label:   `${ESC}1m${rgb( 38, 139, 210)}`,   // bold solarized blue    (#268BD2)
-  accent:  rgb( 42, 161, 152),                 // solarized cyan         (#2AA198)
-  link:    `${ESC}4m${rgb( 38, 139, 210)}`,   // underline + solarized blue
-  success: rgb(133, 153,   0),                 // solarized green        (#859900)
+  title:   `${ESC}1m${rgb(212,  96, 106)}`,   // bold cherry coral      (#D4606A) — Amurosa accent
+  label:   `${ESC}1m${rgb(184, 150, 212)}`,   // bold grape purple      (#B896D4) — Amurosa syntax keyword
+  accent:  rgb(216, 130, 144),                 // soft coral             (#D88290) — Amurosa dark accent
+  link:    `${ESC}4m${rgb(184, 150, 212)}`,   // underline + grape purple
+  success: rgb( 74, 222, 128),                 // modern green           (#4ADE80) — Amurosa dark success
   muted:   `${ESC}2m`,                         // dim — adapts to terminal bg
   divider: `${ESC}2m`,                         // dim
 };
 
-const HR = [{ text: "  ──────────────────────────────────────────────────", style: "divider" }];
+const HR = [{ text: "  ─── ✦ ──────────────────────────────── ✦ ───", style: "divider" }];
 
 const profile = [
   [],
-  [{ text: "  ◆  东东's Blog", style: "title" }],
+  [{ text: "  ✦  东东's Blog", style: "title" }],
   HR,
   [],
   [
